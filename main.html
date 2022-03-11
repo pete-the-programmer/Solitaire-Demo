@@ -1,0 +1,55 @@
+<div class="game ${SelectionMode}">
+  <div class="topHalf">
+    <div class="stacks">
+      ${Stacks}
+      <template id="Stack">
+        <div>
+          <h4>${StackNum}</h4>
+          <ul>
+            ${StackCards}
+            <li onclick="${DropClicked}">
+              <div class="card dropTarget" title="Place card here" style="background-position-x: -45px; background-position-y: -252px"></div>
+            </li>
+          </ul>
+        </div>
+      </template>
+    </div>
+    <div class="aces">
+      ${Aces}
+      <template id="AceStack">
+        <div>
+          <h4>${Symbol}</h4>
+          <ul>
+            ${AceCards}
+            <li onclick="${DropClicked}">
+              <div class="card dropTarget" title="Place card here" style="background-position-x: -45px; background-position-y: -252px"></div>
+            </li>
+          </ul>
+        </div>
+      </template>      
+    </div>
+  </div>
+  <div class="table">
+    <h3>Table</h3>
+    <ul>
+      ${Table}
+    </ul>
+  </div>
+  <div class="deck">
+    <h3>Deck</h3>
+    <ul onclick="${DrawSomeCards}" title="Deal 3 cards">
+      ${Deck}
+    </ul>
+  </div>
+
+  <template id="CardBack">
+    <li>
+      <div class="card" style="background-position-x: 0px; background-position-y: -252px"></div>
+    </li>
+  </template>
+  <template id="Card">
+    <li onclick="${CardClicked}" class="">
+      <div class="card ${Selected}" title="${CardText}" alt="${CardText}" style="background-position-x: calc( ${NumberOffset} * -45px); background-position-y: calc( ${SuitOffset} * -63px)"></div>
+    </li>
+  </template>
+</div>
