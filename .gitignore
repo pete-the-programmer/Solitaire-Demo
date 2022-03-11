@@ -1,0 +1,6 @@
+_site/
+.jekyll*
+.ionide/
+.vscode/
+bin/
+obj/

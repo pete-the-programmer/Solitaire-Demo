@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Game", "Game\Game.fsproj", "{D1919581-8305-45FD-900E-7E3C17178FC1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Website", "Website\Website.fsproj", "{5EA96299-CC8D-4221-BE54-CA555190669E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1919581-8305-45FD-900E-7E3C17178FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1919581-8305-45FD-900E-7E3C17178FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1919581-8305-45FD-900E-7E3C17178FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1919581-8305-45FD-900E-7E3C17178FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA96299-CC8D-4221-BE54-CA555190669E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA96299-CC8D-4221-BE54-CA555190669E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA96299-CC8D-4221-BE54-CA555190669E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA96299-CC8D-4221-BE54-CA555190669E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

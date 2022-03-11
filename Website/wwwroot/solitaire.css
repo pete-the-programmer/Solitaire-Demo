@@ -1,0 +1,104 @@
+h2, h3, h4 {
+  color: #777;
+  margin-top: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  color: #777;
+}
+.topHalf{
+  display: flex;
+  align-content: space-between;
+
+}
+.stacks, .aces{
+  display: flex;
+  margin: 0 1em 2em;
+  align-content: space-between;
+  flex-grow: 1;
+  text-align: center;
+}
+.stacks > *, .aces > * {
+  flex-grow: 1;
+}
+.stacks ul, .aces ul {
+  padding-top: 40px;
+}
+.stacks li, .aces li {
+  margin-top: -40px;
+}
+
+.table ul, .deck ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.deck ul, .table ul{
+  margin-left: 1.2em;
+  height: 70px;
+  width: 90%;
+  background-color: green;
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+  padding: 20px 20px 20px 40px;
+}
+.deck ul {
+  cursor: pointer;
+}
+.deck li, .table li {
+  margin-left: -1.2em;
+
+}
+
+
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+
+.card{
+  height: 62px; 
+  width:44px; 
+  display: inline-block; 
+  background-color: white;
+  background-image: url('cards.png');
+  background-size: 585px 315px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropTarget{
+  transition: opacity 0.5s, width 0.1s;
+}
+.mode_unselected .dropTarget {
+  cursor:default;
+  color: transparent;
+  opacity: 0;
+  width: 0;
+  border: 0; 
+}
+.mode_selected .dropTarget{
+  opacity: 0.2;
+  display: inline-block;
+  color: green;
+  cursor:cell;
+}
+.mode_selected .dropTarget:hover{
+  opacity: 1.0;
+}
+
+.selected {
+  box-shadow: 0px 0px 10px gold;
+}
